@@ -34,4 +34,4 @@ describe('HTTP mocking practice',()=>{
         })
         cy.get('P').should('have.text','Oops only 1 Book available')
     })
-})
+})   
