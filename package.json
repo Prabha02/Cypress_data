@@ -1,0 +1,22 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prabha",
+  "license": "ISC",
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "cypress": "^13.5.0",
+    "neat-csv": "5.1.0"
+  },
+  
+  
+    "book_name": "Learn Appium Automation with Java",
+    "isbn": "RS704",
+    "aisle": "2287"
+
+}
