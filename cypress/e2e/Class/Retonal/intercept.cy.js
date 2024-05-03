@@ -15,8 +15,6 @@ describe('HTTP mocking practice',()=>{
         // cy.wait('@exceptUrl')
         // cy.get('P').should('have.text','Oops only 1 Book available')
 
-        ///dhilip
-
         cy.intercept({
             method : "GET",
             url : "https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=shetty"
@@ -36,25 +34,4 @@ describe('HTTP mocking practice',()=>{
         })
         cy.get('P').should('have.text','Oops only 1 Book available')
     })
-})   
-///check
-
-// /// <reference types ="cypress"/>
-
-
-// describe('Practics',()=>{
-//     it('Dynamic',()=>{
-//      Cypress.on('uncaught:exception', (err, runnable) => {
-//             // returning false here prevents Cypress from
-//             // failing the test
-//         return false
-//      })
-//     cy.visit('https://codenboxautomationlab.com/practice/')
-//     cy.get('#autocomplete').type('al')
-//     cy.get('.ui-menu-item').each(($e1,index,list)=>{
-//         if($e1.text()=="Albania"){
-//           cy.wrap($e1).click().should('have.text',"Albania")
-//         }
-//        })
-//     })
-// })
+})

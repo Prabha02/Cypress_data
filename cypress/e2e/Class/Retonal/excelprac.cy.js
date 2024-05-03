@@ -10,6 +10,7 @@ describe('JWT Session', () => {
     cy.loginAPI().then(function()
     {
         cy.visit("https://rahulshettyacademy.com/client",
+        cy.pause(),
         {
             onBeforeLoad :function(window)
             {
@@ -17,7 +18,7 @@ describe('JWT Session', () => {
             }
 
         })       
-
+      
     })
     cy.get(".card-body b").eq(1).then(function(ele)
       {
@@ -43,7 +44,7 @@ describe('JWT Session', () => {
     {
       cy.log(result.data[1].A);
       expect(productName).to.equal(result.data[1].B);
-      
+      nhbgvgngvgnbgvfbvjmjmk
     })
     cy.readFile(filePath).then((text)=>{
       expect(text).to.include(productName)
